@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">Neurosen Adinira - XI-10 SMAN 1 Sumedang</title>
+    <style>
+        /* Reset dan Font */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+				}
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        /* Tema Warna: Biru dan Putih */
+        .header, .footer {
+            background-color: #8abcf2;
+            color: white;
+        }
+        .section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .hero {
+            background-color: #e9ecef;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .btn {
+            background-color: #8abcf2;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Navigasi */
+        nav {
+            background-color: #8abcf2;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #cce7ff;
+        }
+
+        /* Responsif */
+        @media (max-width: 768px) {
+            .section {
+                margin: 10px;
+                padding: 15px;
+            }
+            nav a {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+
+        /* Grid untuk Daftar Siswa */
+        .student-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .student-item {
+            background-color: #deecfa;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .student-item:hover {
+            transform: scale(1.05);
+        }
+
+        /* Animasi */
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <a href="#homie">Homie</a>
+        <a href="#Our Class">Our Class</a>
+        <a href="#Class Roster">Class Roster</a>
+        <a href="#playlist kita">Playlist kita</a>
+        <a href="#Neurosen update">Neurosen update</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="homie" class="hero fade-in">
+        <h1>Neurosen Adinira</h1>
+        <p>XI-10 SMAN 1 Sumedang</p>
+        <img id="class-photo" src="https://i.imgur.com/T5LtfXR.jpeg" alt="Foto Kelas XI-10" style="max-width: 100%; height: auto; margin: 20px 0; border-radius: 8px;">
+        <button class="btn" onclick="editPhoto()">Edit Foto Kelas</button>
+    </section>
+
+    <!-- Tentang Kelas -->
+    <section id="Our Class" class="section fade-in">
+        <h2>Our Class</h2>
+        <p><strong>Nama Kelas:</strong> Neurosen Adinira</p>
+        <p><strong>Sekolah:</strong> SMA Negeri 1 Sumedang</p>
+        <p><strong>Wali Kelas:</strong> Bu Mia Titin Marlia, S.Pd., M.T</p>
+        <p><strong>Jumlah Murid:</strong> 36 siswa (7 laki-laki, 29 perempuan)</p>
+        
+        <h3>Makna Neurosen Adinira</h3>
+        <p><strong>Neurosen</strong> melambangkan kecerdasan, logika, dan pemikiran kritis.</p>
+    </section>
+
+    <!-- Daftar Siswa -->
+    <section id="Class Roster" class="section fade-in">
+        <h2>Class Roster</h2>
+        <div class="student-grid">
+            <div class="student-item">1. Agsena Damaris</div>
+            <div class="student-item">2. Aida A Sunny M</div>
+            <div class="student-item">3. Anggita Kikania Putria Rukmana</div>
+            <div class="student-item">4. Auny Rismayanti Putri</div>
+            <div class="student-item">5. Azka Ismail</div>
+            <div class="student-item">6. Callula Ananda Salwa</div>
+            <div class="student-item">7. Chelsy Juliantika Pratiwi</div>
+            <div class="student-item">8. Cut Zahra Putri Yusuf</div>
+            <div class="student-item">9. Gaida Farhana</div>
+            <div class="student-item">10. Ghisel Akmila Nurzizah</div>
+            <div class="student-item">11. Hasnah Agustanti Fathanah</div>
+            <div class="student-item">12. Khanza Salsabila Putri Raharja</div>
+            <div class="student-item">13. Kian Taufik</div>
+            <div class="student-item">14. Muhammad Ridho Al Rasyad</div>
+            <div class="student-item">15. Naufal Aziz Hartadiyan</div>
+            <div class="student-item">16. Naura Yunita Santika</div>
+            <div class="student-item">17. Nazwa Lailatul Kamilah Setiawan</div>
+            <div class="student-item">18. Puji Nur Fauziyah</div>
+            <div class="student-item">19. Rayhana Salsabila</div>
+            <div class="student-item">20. Rayya Queen Aisyah F</div>
+            <div class="student-item">21. Reisya Maulani Putri</div>
+            <div class="student-item">22. Rey Bengras Panuntun</div>
+            <div class="student-item">23. Salwaa Azalea Shakila S.</div>
+            <div class="student-item">24. Sari Mustika</div>
+            <div class="student-item">25. Shafa Nadhira Khairunnisa</div>
+            <div class="student-item">26. Shaquilla Zahra A</div>
+            <div class="student-item">27. Shinta Pustika Dewi</div>
+            <div class="student-item">28. Shyngih Ramadhan Dewantara Putra</div>
+            <div class="student-item">29. Silmina Amira Khalida</div>
+            <div class="student-item">30. Silvia Rizky Octhaviani</div>
+            <div class="student-item">31. Siti Nabilah Nurfaridah</div>
+            <div class="student-item">32. Siti Sarah</div>
+            <div class="student-item">33. Talitha Nuraeni</div>
+            <div class="student-item">34. Tidah Taramarni</div>
+            <div class="student-item">35. Wantiya Komala</div>
+            <div class="student-item">36. Zulfaa Halimatus-Sa’diyyah</div>
+        </div>
+    </section>
+
+    <!-- Playlist Spotify -->
+    <section id="playlist kita" class="section fade-in">
+        <h2>Playlist kitaa</h2>
+        <iframe src="https://open.spotify.com/embed/playlist/4cO5rjxQJlmQQQkmDyGt2j?si=swIYouIkTsC4AXzP-Ni5GQ&pi=hUipfrUWSKKpC" width="100%" height="380" frameborder="0" allowtransparency="true" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </section>
+
+    <!-- Media Sosial -->
+    <section id="Neurosen update" class="section fade-in">
+        <h2>Informasi Tambahan</h2>
+        <p>Ikuti kami di Instagram:</p>
+        <a href="https://www.instagram.com/neurosen.adinira" target="_blank" style="text-decoration: none; color: #007bff;">
+            @neurosen.adinira
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2023 Neurosen Adinira XI-10 SMAN 1 Sumedang. Dibuat dengan hati admin untuk siswa SMA.</p>
+    </footer>
+
+    <script>
+        // Fungsi untuk edit foto (sederhana, menggunakan prompt)
+        function editPhoto() {
+            const newSrc = prompt("Masukkan URL gambar baru:");
+            if (newSrc) {
+                document.getElementById('class-photo').src = newSrc;
+            }
+        }
+
+        // Animasi scroll sederhana
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    section.classList.add('fade-in');
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
